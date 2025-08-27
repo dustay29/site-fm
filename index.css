@@ -30,6 +30,12 @@ header .logo {
   font-weight: bold;
 }
 
+header .logo img {
+  height: 70px;    /* controla tamanho */
+  width: auto;     /* mantém proporção */
+  display: block;
+}
+
 header nav ul {
   list-style: none;
   display: flex;
@@ -78,19 +84,20 @@ header nav ul li a:hover {
 
 .sobre h2 {
   font-size: 2rem;
+  margin-left: 200px;
   margin-bottom: 20px;
+  text-align: initial;
 }
 
 .sobre p {
   max-width: 800px;
-  margin: auto;
   font-size: 1.1rem;
+  text-align: left;
   color: #555;
 }
 
 /* DESTAQUES */
 .destaques {
-  padding: 80px 50px;
   text-align: center;
 }
 
@@ -103,7 +110,7 @@ header nav ul li a:hover {
   display: flex;
   justify-content: center;   /* centraliza */
   gap: 60px;                 /* define o espaço exato entre os cards */
-  flex-wrap: wrap;           /* quebra linha no celular */
+  flex-wrap: wrap;           
   padding: 20px;
 }
 
@@ -175,7 +182,10 @@ header nav ul li a:hover {
 footer {
   background: #111;
   color: #fff;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
+  display: flex;
+  justify-content: center; /* centraliza horizontal */
+  align-items: center;     /* centraliza vertical */
+  height: 100px;           /* altura do footer */
+  margin-top: 80px;
 }
+

@@ -1,0 +1,73 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* HEADER */
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #f39c12;
+}
+
+.titulo {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Sobre */
+.sobre {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: justify;
+}
+
+iframe {
+  display: block;   /* faz o iframe virar um bloco */
+  margin: 0 auto;   /* centraliza horizontalmente */
+  max-width: 800px; 
+  padding: 20px;
+}
+

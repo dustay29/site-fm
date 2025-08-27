@@ -32,6 +32,12 @@ header .logo {
   font-weight: bold;
 }
 
+header .logo img {
+  height: 50px;    /* controla tamanho */
+  width: auto;     /* mantém proporção */
+  display: block;
+}
+
 header nav ul {
   list-style: none;
   display: flex;
@@ -50,17 +56,21 @@ header nav ul li a:hover {
 /* Títulos */
 .titulo {
   text-align: center;
-  margin: 20px 0;
+  margin-top: 80px;
+  margin-bottom: 20px;
   font-size: 24px;
 }
 
 .carros {
-  display: flex;
-  justify-content: center;   /* centraliza */
-  gap: 60px;                 /* define o espaço exato entre os cards */
-  flex-wrap: wrap;           /* quebra linha no celular */
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* força 3 colunas */
+  justify-content: center; /* centraliza no container */
+  gap: 15px; /* espaço entre os cards (pode ajustar) */
+  max-width: 1000px; /* largura máxima pra não ficar esticado demais */
+  margin: 0 auto; /* centraliza na página */
 }
+
+
 
 .carro {
   width: 280px; /* mantém o tamanho fixo */
@@ -70,6 +80,7 @@ header nav ul li a:hover {
   background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   display: flex;
+   margin-bottom: 30px;
   flex-direction: column;
 }
 
